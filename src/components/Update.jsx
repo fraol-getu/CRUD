@@ -12,14 +12,14 @@ const Update = ( {user,close,getData}) => {
         event.preventDefault()
         axios.put(URL + id, inputData)
         .then(res => {
-           alert('data Updated sucesfully') 
+           alert('data Updated sucesfully') ,
+           getData()
         })
         .catch(err => console.log(err))
         if(document){
             document.body.style.overflowY = "scroll"
           }
           close(state => !state)
-          getData()
         }
   
     return (
