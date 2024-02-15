@@ -1,1 +1,1 @@
-export const URL = "https://json-wiov.onrender.com/users";
+export const URL = "https://json-wiov.onrender.com/users/";
